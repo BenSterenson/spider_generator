@@ -1,25 +1,18 @@
 <div>
-    <div>
-      <small>Flat</small>
-      <md-button>Default</md-button>
-      <md-button :md-ripple="false">Ripple Off</md-button>
-      <md-button class="md-primary">Primary</md-button>
-      <md-button class="md-accent">Accent</md-button>
-      <md-button disabled>Disabled</md-button>
-    </div>
+    <md-card>
+      <md-card-header>
+        <md-field>
+            <label>Field Name</label>
+            <md-input v-model="fieldName" placeholder="Field Name"></md-input>
+        </md-field>
+      </md-card-header>
 
-    <div>
-      <small>Raised</small>
-      <md-button class="md-raised">Default</md-button>
-      <md-button class="md-raised" :md-ripple="false">Ripple Off</md-button>
-      <md-button class="md-raised md-primary">Primary</md-button>
-      <md-button class="md-raised md-accent">Accent</md-button>
-      <md-button class="md-raised" disabled>Disabled</md-button>
-    </div>
+      <md-card-content>
+        <md-field>
+            <label>Xpath</label>
+            <md-input v-model="xPath" ></md-input>
+        </md-field>
+      </md-card-content>
 
-    <div>
-      <small>Dense</small>
-      <md-button class="md-dense md-primary">Flat</md-button>
-      <md-button class="md-dense md-raised md-primary">Raised</md-button>
-    </div>
+    </md-card>
   </div>

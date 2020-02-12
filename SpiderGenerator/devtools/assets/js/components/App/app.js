@@ -1,4 +1,8 @@
 
 export default {
-    name: 'app'
+    name: 'app',
+    data: () => ({
+      fieldName: null,
+      xPath: null
+    })
 }
