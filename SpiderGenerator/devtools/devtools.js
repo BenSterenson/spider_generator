@@ -7,7 +7,7 @@ chrome.devtools.panels.elements.createSidebarPane("Sixgill",function(sidebar){
 });
     
 function handleShown(){
-    chrome.extension.sendMessage({message:"generate-selector"})
+    browser.extension.sendMessage({message:"generate-selector"})
 }
 
 function handleHidden(){
